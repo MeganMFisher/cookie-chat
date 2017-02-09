@@ -9,12 +9,41 @@ body {
   font-family: sans-serif;
 }
 
+.top {
+  display: flex;
+  flex-direction: column;
+  height:60vh;
+  width: 100%;
+  
+  
+}
+
+.picture {
+  background: url("http://mountainridgeal.com/wp-content/uploads/2014/12/home-mountains.jpg") no-repeat center;
+  height:55vh;
+
+}
+
+
+.circle { 
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  z-index: 999;
+  margin: -175px auto;
+  background-color: white;
+  border: 1px solid #303807;
+  background-size: cover;
+  background: url("https://pbs.twimg.com/profile_images/648907414587072512/RSKdI5dQ.png") no-repeat center;
+}
+
 .main-container {
   width: 75%;
   margin: 10px auto;
   background: rgba(255, 255, 255, 0.86);
   padding: 5px;
   border-radius: 10px;
+  padding-bottom: 30px;
 }
 
 .main-container h1 {
@@ -23,11 +52,60 @@ body {
 
 .text-box {
   margin: 0px auto;
-  width: 40%;
+  width: 60%;
+  height: 50px;
+  font-size: 24px;
 }
 
-p{
-  text-align: center;
-  margin: 3px 0;
-  font-size: 17px;
+.text-box:hover{
+  border: 3px solid #25aae1;
+  opacity: .5;
+}
+
+.messages-container {
+  border: 10px outset #717171;
+  width: 75%;
+  margin: 10px auto;
+  height: 250vh;
+  color: #717171;
+  background-color: white;
+}
+
+.mess {
+  padding: 10px;
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mess:hover {
+  background-color: #25aae1;
+  opacity: .2;
+}
+
+.message-format {
+  color: black;
+  font-size: 24px;
+}
+
+.date {
+  border: 1px solid #25aae1;
+  border-radius: 10px;
+  background-color: #25aae1;
+  color: white;
+  padding: 5px;
+  /*float: middle;*/
+}
+
+h1{
+  color: #717171;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+hr {
+  border: 2px solid #25aae1;
+  box-shadow: 2px 2px 5px #888888;
 }
